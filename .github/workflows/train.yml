@@ -1,0 +1,26 @@
+name: Train release
+on:
+  workflow_dispatch:
+    inputs:
+      version: { description: "Release version", default: "0.1.0" }
+permissions:
+  contents: write
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - run: pip install -r requirements.txt
+      - run: PYTHONPATH=src:. python -m ml.data.build_dataset --fetch
+      - run: PYTHONPATH=src:. python -m ml.train.train --version "${{ inputs.version }}"
+      - uses: actions/upload-artifact@v4
+        with: { name: "release-${{ inputs.version }}", path: "artifacts/releases/${{ inputs.version }}" }
+      - run: |
+          git config user.name "aromascope-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add artifacts/releases
+          git commit -m "Release ${{ inputs.version }}: trained model bundle [skip ci]" || echo "nothing to commit"
+          git push
