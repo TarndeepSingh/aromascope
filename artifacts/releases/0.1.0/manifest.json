@@ -1,0 +1,44 @@
+{
+  "code_revision": "ff7d0243749d5d4b8ce69bd9dfd1ddb91657d8d8",
+  "code_version": "0.1.0",
+  "created_at": "2026-11-10T06:21:29+00:00",
+  "data_hashes": {
+    "behavior.csv": "afe0846b159ac00691ba4c07074829f7ff262b80fa32a3280661457153e70c41",
+    "molecules.csv": "a06841a275c35b9db9253a24ac913ad97bf39f2c778e4f8a5c4df641e7dc0fa6",
+    "stimuli.csv": "ff4be9ba6a66523bc5a165ded09eee125ccb79d4988090d682b323d9331a44c8"
+  },
+  "data_snapshot": "leffingwell@pyrfume:8054ea98",
+  "featurizer_version": "morgan2x2048+physchem8-v1",
+  "files": {
+    "calibration.json": "18de3f75f20acf75f0229945cc22ca7b43843c018aa96130f5cf4d89d5ab2c59",
+    "domain.json": "3083e51a0089611cfe3cafa092a17bd1289af0ed64146630c2c97cd64bfaaf72",
+    "evaluation_report.json": "b1834c4253826f52a1a0f714c44a6a592391d46b87e5efe4e09273d3e4fcbf92",
+    "features.npz": "9f4e4010ea7279be04ae3e4c735b5d9b796e1a20da3e2c44c91dc1ca51a3f578",
+    "labels.json": "de14343f23c6f148bbc11fde3b7578652417f5058756a15f09dcbf5f1af9c24b",
+    "ledger.json": "8bcbc5d19c777b0821f7645475847f1ea5e632927396df94af0dfd8924dc1ebf",
+    "map.json": "efdd8840790591f27238d9ff689c64725360beea21390f544376935e386bfde9",
+    "model.joblib": "de37b82afe93b4c1a5136f21e57dcb767d35f8e435f23d84b6be2ee844463d39",
+    "model_card.md": "4fed727fce0c4910f609af29dbfa16bde93485557bf5db0b318ff7addd62aa56",
+    "projection.npz": "746c6e60d845600a361a908e97aa017dd163e441e8b2f4805722e722f5f43e8c",
+    "reference.npz": "3aa16970dbb8730d8f231abe5c3ae5bd0fd0159412c0c13388a249f51b1f46c6",
+    "reference_smiles.json": "2c282e072d8a6d2bd101e2f1afa61261c8717251271350c09085cacae971a4b1"
+  },
+  "id": "aromascope-odor-profile",
+  "model_kind": "rf",
+  "policy_version": "chem-policy-1",
+  "redistribution_approved": false,
+  "runtime": {
+    "numpy": "2.5.4",
+    "python": "3.12.16",
+    "rdkit": "2026.09.1",
+    "scikit_learn": "1.9.1"
+  },
+  "split": {
+    "method": "scaffold-grouped",
+    "seed": 0,
+    "test": 352,
+    "train": 2818,
+    "val": 352
+  },
+  "version": "0.1.0"
+}

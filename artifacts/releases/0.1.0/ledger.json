@@ -1,0 +1,42 @@
+{
+  "built_at": "2026-11-10T06:21:08+00:00",
+  "policy_version": "chem-policy-1",
+  "sources": [
+    {
+      "name": "Leffingwell Odor Dataset (via Pyrfume)",
+      "doi": "10.5281/zenodo.4085098",
+      "url": "https://github.com/pyrfume/pyrfume-data/tree/main/leffingwell",
+      "retrieved": "2026-11-10",
+      "pyrfume_commit": "8054ea98ed675005ec10e67359902f500e4911b0",
+      "maintainer": "Pyrfume Project; original data John Leffingwell, cleaned by Sanchez-Lengeling et al.",
+      "files": {
+        "behavior.csv": "afe0846b159ac00691ba4c07074829f7ff262b80fa32a3280661457153e70c41",
+        "molecules.csv": "a06841a275c35b9db9253a24ac913ad97bf39f2c778e4f8a5c4df641e7dc0fa6",
+        "stimuli.csv": "ff4be9ba6a66523bc5a165ded09eee125ccb79d4988090d682b323d9331a44c8"
+      },
+      "rights": {
+        "pyrfume_repository_license": "MIT",
+        "dataset_terms": "The dataset manifest says use restrictions are in a LICENSE file from Leffingwell/Google; that file was not found in the retrieved checkout. UNRESOLVED: review before redistributing labels.",
+        "redistribution_approved": false
+      },
+      "task": "Multi-label descriptor assignment (binary). Reference population: expert-compiled flavor and fragrance descriptors, not a rater panel.",
+      "attribution": "Odor labels: Leffingwell dataset, cleaned by Sanchez-Lengeling et al., distributed by the Pyrfume project."
+    }
+  ],
+  "chemistry_coverage": {
+    "records_in": 3522,
+    "parse_or_policy_failures": 0,
+    "failure_codes": {},
+    "duplicate_records_merged": 0,
+    "molecules_out": 3522,
+    "stereo_unspecified_note": "Stereochemistry is preserved in canonical SMILES; model features ignore it."
+  },
+  "label_handling": {
+    "descriptors": 113,
+    "raw_vs_canonical": "Descriptor vocabulary is used as published (no terms merged).",
+    "missingness": "Source lists positive descriptors only. An unlisted descriptor is UNKNOWN; training treats it as negative (positive-unlabeled setting) and the model card states this limitation.",
+    "aggregation": "No rater-level data is available in this source; there is no dispersion or rater count.",
+    "min_positives": 20,
+    "max_positives": 1391
+  }
+}
