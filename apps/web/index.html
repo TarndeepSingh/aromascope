@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AromaScope · Digital olfaction from molecular structure</title>
+  <meta name="description" content="AromaScope predicts odor descriptors from a molecule's structure, with evidence, coverage and limits shown beside every result. Sensor-free digital olfaction.">
+  <meta name="theme-color" content="#0a1020">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 6l20 11.5v23L32 52 12 40.5v-23z' fill='none' stroke='%2342d7c5' stroke-width='5' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='29' r='6' fill='%239b8cff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="config.js"></script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="#/analyze" aria-label="AromaScope home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#42d7c5"/><stop offset="1" stop-color="#9b8cff"/></linearGradient></defs>
+          <path d="M32 5l21 12v24L32 53 11 41V17z" fill="none" stroke="url(#lg)" stroke-width="4.5" stroke-linejoin="round"/>
+          <path d="M32 17l10.5 6v12L32 41l-10.5-6V23z" fill="none" stroke="url(#lg)" stroke-width="2" stroke-linejoin="round" opacity=".55"/>
+          <circle cx="32" cy="29" r="4.5" fill="url(#lg)"/></svg>
+        <span>AromaScope</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Primary"></nav>
+      <p class="scope">Predicts from structure.<br>Not an air sensor.</p>
+    </aside>
+    <main class="main">
+      <div id="demo-banner" class="banner caution" role="status" hidden>Demo mode: this page is talking to a mock API that returns sample data, not a trained model.</div>
+      <div id="view" tabindex="-1"></div>
+    </main>
+  </div>
+  <noscript><p style="padding:24px">AromaScope needs JavaScript to run.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

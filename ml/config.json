@@ -1,0 +1,5 @@
+{
+  "dataset": "leffingwell",
+  "redistribution_approved": false,
+  "_comment": "Set redistribution_approved to true ONLY after you have reviewed the Leffingwell dataset terms and confirmed that bundling its descriptor labels in a public release is permitted. While false, nearest-neighbour evidence shows structures and similarity but withholds their odor labels."
+}
